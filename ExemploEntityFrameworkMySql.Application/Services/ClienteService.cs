@@ -16,11 +16,10 @@ namespace ExemploEntityFrameworkMySql.Application.Services
 		public void Alterar(int id, Cliente cliente)
 		{
 			cliente.Id = id;
-			cliente.DataAlteracao = DateTime.Now;
-			_clienteRepository.Alterar(cliente);
+			_clienteRepository.AlterarParcial(cliente);
 		}
 
-		public void Excluir(int id) => _clienteRepository.Excluir(id);
+		public void Excluir(int id) => _clienteRepository.Inativar(id);
 
 		public void Incluir(Cliente cliente)
 		{

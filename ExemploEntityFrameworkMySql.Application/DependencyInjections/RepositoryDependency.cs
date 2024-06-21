@@ -1,5 +1,4 @@
-﻿//using ExemploEntityFrameworkMySql.Infra.Repositories;
-using ExemploEntityFrameworkMySql.Domain.Contracts.Repositories;
+﻿using ExemploEntityFrameworkMySql.Domain.Contracts.Repositories;
 using ExemploEntityFrameworkMySql.Infra.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
